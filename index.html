@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>project78</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pixtastock.com%2Fillustration%2F43470169&psig=AOvVaw0cS-Mx20em7ohM6Q5F3dNk&ust=1624973121706000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPi0lOS2uvECFQAAAAAdAAAAABAD"style="width:30%;"id="family_member_image">
+        <h4 id="family_member_name">Vahini</h4>
+        <button onclick="update();">Next</button>
+        
+    </body>
+    <script>
+        var i="0"
+        function update()
+
+        {
+            i++;
+            var numbers_of_family_in_array = 5;
+            if(i > numbers_of_family_in_array)
+        {
+            i=0;
+        }
+        var updatedImage = images[i];
+        var updatedName = names[i];
+        document.getElementById("family_member_image").src = updatedImage;
+        document.getElementById("family_member_name").innerHTML = updatedName;
+        var images=[ "https://mail.google.com/mail/u/0?ui=2&ik=974f7c4808&attid=0.1&permmsgid=msg-f:1703819284056441173&th=17a52e9c93a50155&view=att&disp=safe",
+        "https//mail.google.com/mail/u/0?ui=2&ik=974f7c4808&attid=0.1&permmsgid=msg-f:1703819030908170384&th=17a52e61a2d4f090&view=att&disp=safe",
+    "https://mail.google.com/mail/u/0?ui=2&ik=974f7c4808&attid=0.3&permmsgid=msg-f:1703819030908170384&th=17a52e61a2d4f090&view=att&disp=safe",
+    "https://mail.google.com/mail/u/0?ui=2&ik=974f7c4808&attid=0.1&permmsgid=msg-f:1703819181417295800&th=17a52e84addfefb8&view=att&disp=safe"];
+    var names=["Family","Ramu","Vahini","Vanith","Roshini"];
+    </script>
+</html>
